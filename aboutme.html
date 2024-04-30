@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Personal Home Page | About Me</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+      </div>
+      <div class="logo"><a href="index.html">Personal Home Page</a></div>
+      <div class="nav-items">
+        <li><a href="./academic.html">Academic</a></li>
+        <li><a href="./personal.html">Personal</a></li>
+        <li><a href="./family.html">Family</a></li>
+        <li><a href="./aboutme.html" class="active-nav">About Me</a></li>
+        <li><a href="./resume.html">Résumé</a></li>
+      </div>
+      <div class="search-icon">
+        <span class=""></span>
+      </div>
+      <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+      </div>
+    </nav>
+    <div class="container" style="margin-top: 7rem">
+      <div class="image-container">
+        <img src="./img/profile-pic-3.jpg" alt="Placeholder Image" />
+      </div>
+      <div class="description">
+        <p>
+          Describe Yourself:
+          <span>Just a simple guy who wants to succeed in life.</span>
+        </p>
+        <p>
+          Talent:
+          <span>I can do basic video and photo editing.</span>
+        </p>
+        <p>
+          Weaknesses:
+          <span>My family, and my problems in life.</span>
+        </p>
+        <p>
+          Strengths:
+          <span
+            >My family, friends, and my dream to be a successful person.</span
+          >
+        </p>
+        <p>Hobbies: <span>Watch random videos on the Internet.</span></p>
+        <p>
+          Sports:
+          <span
+            >I don't have any sports because I am always inside the house.</span
+          >
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+      </div>
+      <p>Batch 11 Year 2024</p>
+      <p>TELECALL INSTITUTE OF TECHNOLOGY INC.</p>
+    </footer>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-icon span");
+      const searchBtn = document.querySelector(".search-icon");
+      const cancelBtn = document.querySelector(".cancel-icon");
+      const items = document.querySelector(".nav-items");
+      const form = document.querySelector("form");
+      menuBtn.onclick = () => {
+        items.classList.add("active");
+        menuBtn.classList.add("hide");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      };
+      cancelBtn.onclick = () => {
+        items.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        searchBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        form.classList.remove("active");
+        cancelBtn.style.color = "#ff3d00";
+      };
+      searchBtn.onclick = () => {
+        form.classList.add("active");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  background: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  background: grey;
+}
+
+#container {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 2em;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.24);
+}
+
+.mini-card {
+  display: flex;
+  margin: 0.6em 0 0 0;
+  font-size: 0.9em;
+}
+
+.mini-card .icon {
+  margin-right: 0.6em;
+}
+
+#profile {
+  flex: 23%;
+  display: block;
+  position: relative;
+  margin: 3% 3% 3% 3%;
+  border-radius: 5px;
+  padding: 2%;
+  background-color: #061a32;
+}
+#info-cards {
+  flex: 65%;
+  display: block;
+  margin-top: 3%;
+  margin-right: 3%;
+  width: 100%;
+  height: 100%;
+}
+#image {
+  position: relative;
+  overflow: hidden;
+}
+#image,
+#profile-photo {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#name {
+  font-size: 23px !important;
+  line-height: 20px !important;
+  color: #ffffffdd;
+}
+
+.light {
+  color: #f3f3f3;
+}
+
+.title,
+.card > ul > li {
+  padding: 0 0 0 15px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  list-style-type: none;
+}
+.title {
+  font-size: 20px !important;
+  padding: 0 !important;
+}
+
+.title p {
+  display: inline;
+}
+
+.title span {
+  /* color: #555; */
+  font-size: 0.7em;
+  font-family: "Open Sans", sans-serif;
+}
+#name,
+.title > p {
+  font-weight: bolder;
+  font-family: "Open Sans", sans-serif;
+}
+#email:hover {
+  color: #fdfdfd;
+  transition: 0.5s;
+}
+#college,
+#email,
+#address,
+#education,
+#location {
+  color: #f3f3f3;
+  font-size: 13.5px;
+}
+
+.location {
+  font-style: italic;
+}
+
+strong,
+span {
+  color: black;
+  font-size: 16px;
+}
+#social-links,
+#about {
+  display: inline-block;
+}
+#social-links {
+  margin-bottom: 12px;
+}
+#social-links a {
+  margin: 0 10px;
+}
+
+.fab {
+  font-size: 1.1em;
+}
+.fab,
+.fas {
+  color: whitesmoke;
+}
+#about > a {
+  top: 4px;
+  right: 8px;
+}
+.edit {
+  top: 19px;
+  right: 10px;
+}
+#about > a,
+.edit {
+  position: absolute;
+  font-size: 15px !important;
+}
+.stroke-transparent {
+  -webkit-text-stroke: 1px #ffffffdd;
+  -webkit-text-fill-color: transparent;
+}
+.blue {
+  color: #097bbf !important;
+  font-size: 13px;
+}
+.stroke-transparent-black {
+  -webkit-text-stroke: 1px #1f1f1f;
+  -webkit-text-fill-color: transparent;
+}
+.card {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  margin-bottom: 30px;
+  padding: 15px 30px 30px 30px;
+  background-color: #fff;
+}
+.card > p {
+  color: #0e141e;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 2;
+}
+.card > p > i {
+  font-size: 18px;
+}
+.card > a {
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+  margin-left: 25px;
+  padding: 0;
+  border: 0;
+  height: auto;
+  background: transparent;
+  color: #097bbf;
+  outline: none;
+  cursor: pointer;
+}
+
+.tags {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.tags ~ a {
+  display: none !important;
+}
+.tags span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #0e141e;
+}
+.tags span span {
+  color: #738f93;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr {
+  background-color: #061a32;
+  color: #ffffff;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #061a32;
+}
+
+.table tbody tr.active-row {
+  font-weight: bold;
+  color: #061a32;
+}
+
+@media screen and (max-width: 1090px) {
+  #profile {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #container {
+    display: block;
+  }
+  #profile {
+    width: 90%;
+  }
+  .card {
+    margin: 0 5%;
+    margin-bottom: 30px;
+  }
+}
